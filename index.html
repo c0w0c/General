@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no " />
+    <!-- 主要CSS -->
+    <link rel="stylesheet" href="css/body.css" />
+    <!-- jquery mobile CSS -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <!-- 網站ICON -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <!-- jquery js -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <!-- jquery mobile js -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <!-- 側頁表單 -->
+    <script src="js/panel.js"></script>
+    <!-- 滾動陰影 -->
+    <script src="js/shadow.js"></script>
+    <!-- 功能表資訊修改 -->
+    <script src="js/menu.js"></script>
+
+    <style>
+    .nav-glyphish-example .ui-btn {
+        padding-top: 40px !important;
+    }
+
+    .nav-glyphish-example .ui-btn:after {
+        width: 30px!important;
+        height: 30px!important;
+        margin-left: -15px !important;
+        box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        -webkit-box-shadow: none!important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        background: none
+    }
+
+    #clo:after {
+        background-size: 30px 30px;
+        background-image: url("img/icon_clo.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    #ser:after {
+        background-size: 30px 30px;
+        background-image: url("img/icon_Service.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    #ma:after {
+        background-size: 30px 30px;
+        background-image: url("img/icon_material2.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    #new:after {
+        background-size: 30px 30px;
+        background-image: url("img/buticon_news.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="home" data-fullscreen="true" data-title="總務事務系統│科技股份有限公司">
+        <div data-role="header" data-position="fixed" class="hea" style="border-bottom-color:hsla(0,0%,40%,1)">
+            <a href="#" data-role="none" target="_blank"><img src="img/logo.png" alt="logo" width="62" height="30" class="logo"></a>
+            <H1>總 務 事 務 系 統</H1>
+            <a id="menubtn" href="#panelmenu" data-role="button" data-icon="user">登錄</a>
+        </div>
+        <div id="imgbunner"><img src="img/homebunner.jpg" alt="bunner" class="bunner"></div>
+        <iframe width="100%" height="1000px" style="border:none" src="news.php"></iframe>
+        <div data-position="fixed" data-role="footer" class="foot" style="border-top-color:hsla(0,0%,60%,1)">
+            <div data-role="navbar" class="nav-glyphish-example">
+                <ul>
+                    <li class="nvli"><a href="#home" id="new" data-icon="custom" class="nvli">首頁</a></li>
+                    <li class="nvli"><a href="#p1" id="clo" data-icon="custom" class="nvli">靜電衣物</a></li>
+                    <li class="nvli"><a href="#p2" id="ma" data-icon="custom" class="nvli">雜項用品</a></li>
+                    <li class="nvli"><a href="#p3" id="ser" data-icon="custom" class="nvli">維修通報</a></li>
+                </ul>
+            </div>
+            <p class="foot_p">Copyright © 2016 科技股份有限公司</p>
+        </div>
+    </div>
+    <div data-role="page" id="p1">
+        <div data-role="header" class="hea" data-position="fixed">
+            <h1>靜電衣物事項</h1>
+            <a id="menubtn2" class="ui-btn-right" href="#panelmenu" data-role="button" data-icon="user">登錄</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="clo_inv.php" target="_self">
+                        <img src="img/icon_clonum.png" alt="icon" />
+                        <h3>衣物庫存查詢</h3>
+                        <p class="detail">點選進入靜電衣物庫存數量。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="clo_app.php" target="_self">
+                        <img src="img/icon_clo.png" alt="icon" />
+                        <h3>靜電用品申領</h3>
+                        <p class="detail">點選進入填寫靜電用品申領表格。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="clo_search.php" target="_self">
+                        <img src="img/icon_ser.png" alt="icon" />
+                        <h3>靜電用品申領查詢</h3>
+                        <p class="detail">點選進入查詢靜電用品發送情況及紀錄。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="clo_statistics.php" target="_self">
+                        <img src="img/statistics.png" alt="icon" />
+                        <h3>靜電用品統計報表</h3>
+                        <p class="detail">點選進入查詢靜電用品發送紀錄統計報表。</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-position="fixed" data-role="footer" class="foot" style="border-top-color:hsla(0,0%,60%,1)">
+            <div data-role="navbar" class="nav-glyphish-example">
+                <ul>
+                    <li class="nvli"><a href="#home" id="new" data-icon="custom" class="nvli">首頁</a></li>
+                    <li class="nvli"><a href="#p1" id="clo" data-icon="custom" class="nvli">靜電衣物</a></li>
+                    <li class="nvli"><a href="#p2" id="ma" data-icon="custom" class="nvli">雜項用品</a></li>
+                    <li class="nvli"><a href="#p3" id="ser" data-icon="custom" class="nvli">維修通報</a></li>
+                </ul>
+            </div>
+            <p class="foot_p">Copyright © 2016 科技股份有限公司</p>
+        </div>
+    </div>
+    <div data-role="page" id="p2">
+        <div data-role="header" class="hea" data-position="fixed">
+            <h1>雜項用品事項</h1>
+            <a id="menubtn3" class="ui-btn-right" href="#panelmenu" data-role="button" data-icon="user">登錄</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="sup_app.php" target="_self">
+                        <img src="img/icon_material.png" alt="icon" />
+                        <h3>雜項用品申領</h3>
+                        <p class="detail">點選進入填寫雜項用品申領表格。(如:垃圾袋,掃把,肥皂等等....)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="sup_search.php" target="_self">
+                        <img src="img/icon_ser.png" alt="icon" />
+                        <h3>發送狀態查詢</h3>
+                        <p class="detail">點選進入查詢雜項用品發送情況及紀錄。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="sup_statistics.php" target="_self">
+                        <img src="img/statistics.png" alt="icon" />
+                        <h3>雜項用品統計報表</h3>
+                        <p class="detail">點選進入查詢雜項用品發送紀錄統計報表。</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-position="fixed" data-role="footer" class="foot" style="border-top-color:hsla(0,0%,60%,1)">
+            <div data-role="navbar" class="nav-glyphish-example">
+                <ul>
+                    <li class="nvli"><a href="#home" id="new" data-icon="custom" class="nvli">首頁</a></li>
+                    <li class="nvli"><a href="#p1" id="clo" data-icon="custom" class="nvli">靜電衣物</a></li>
+                    <li class="nvli"><a href="#p2" id="ma" data-icon="custom" class="nvli">雜項用品</a></li>
+                    <li class="nvli"><a href="#p3" id="ser" data-icon="custom" class="nvli">維修通報</a></li>
+                </ul>
+            </div>
+            <p class="foot_p">Copyright © 2016 科技股份有限公司</p>
+        </div>
+    </div>
+    <div data-role="page" id="p3">
+        <div data-role="header" class="hea" data-position="fixed">
+            <h1>維修通報事項</h1>
+            <a id="menubtn4" class="ui-btn-right" href="#panelmenu" data-role="button" data-icon="user">登錄</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="ser_app.php" target="_self">
+                        <img src="img/icon_Service.png" alt="icon" />
+                        <h3>故障維修通報</h3>
+                        <p class="detail">點選進入填寫故障維修通報表格。(如:冷氣故障,電燈損壞,飲水機故障等等....)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="ser_search.php" target="_self">
+                        <img src="img/icon_ser.png" alt="icon" />
+                        <h3>維護進度查詢</h3>
+                        <p class="detail">點選進入查詢故障設備維修進度及紀錄。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="ser_statistics.php" target="_self">
+                        <img src="img/statistics.png" alt="icon" />
+                        <h3>維修申報統計報表</h3>
+                        <p class="detail">點選進入查詢維修申報統計報表。</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-position="fixed" data-role="footer" class="foot" style="border-top-color:hsla(0,0%,60%,1)">
+            <div data-role="navbar" class="nav-glyphish-example">
+                <ul>
+                    <li class="nvli"><a href="#home" id="new" data-icon="custom" class="nvli">首頁</a></li>
+                    <li class="nvli"><a href="#p1" id="clo" data-icon="custom" class="nvli">靜電衣物</a></li>
+                    <li class="nvli"><a href="#p2" id="ma" data-icon="custom" class="nvli">雜項用品</a></li>
+                    <li class="nvli"><a href="#p3" id="ser" data-icon="custom" class="nvli">維修通報</a></li>
+                </ul>
+            </div>
+            <p class="foot_p">Copyright © 2016 科技股份有限公司</p>
+        </div>
+    </div>
+    <div data-role="panel" id="panelmenu" data-position="left" data-display="overlay" data-theme="a">
+        <iframe src="logmenu.php" height="510px" width="100%" style="margin: 0px auto;border:none;"></iframe>
+    </div>
+        <!-- 功能表資訊修改 -->
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
