@@ -21,7 +21,7 @@
 *  PHP 
 *  MySQL
 
-網站連結: [總務事務系統](http://shrhe-web.host56.com/Work_collection/General/)
+網站連結: [總務事務系統](http://shrhe.host56.com/Work_collection/General/index.html)
 
 ---------------------
 
