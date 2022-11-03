@@ -20,9 +20,3 @@
 
 *  PHP 
 *  MySQL
-
-網站連結: [總務事務系統](http://shrhe.host56.com/Work_collection/General/index.html)
-
----------------------
-
-目前本人正在努力尋找**後端工程師**的工作，如果您看了網站，覺得本人的能力符合您的需求，也可以留言給我。
